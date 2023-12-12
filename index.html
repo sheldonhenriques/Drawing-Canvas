@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Molecule Editor</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <svg id="drawing-area"></svg>
+      <div class="tool-menu">
+        <div class="upper-row">
+          <button id="pencil" class="selected" title="Pencil">
+            <i class="fa fa-pencil"></i>
+          </button>
+          <button id="eraser" title="Eraser">
+            <i class="fa fa-eraser"></i>
+          </button>
+        </div>
+        <div class="lower-row">
+          <button id="clear" title="Clear">
+            <i class="fa fa-remove"></i>
+          </button>
+          <button id="undo" title="Undo">
+            <i class="fa fa-mail-reply"></i>
+          </button>
+          <button id="redo" title="Redo">
+            <i class="fa fa-mail-forward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./moleculeEditor.js"></script>
+    <script>
+      const editor = new moleculeEditor();
+    </script>
+  </body>
+</html>
